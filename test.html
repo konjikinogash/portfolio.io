@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive course on Algorithm Design and Analysis for Computer Science enthusiasts. Delve into data structures, optimization strategies, and practical use cases.">
+  <meta name="keywords" content="Algorithm Development, Data Structures, Computational Analysis, Optimization, FullPage.js">
+  <meta property="og:title" content="Algorithm Design and Analysis">
+  <meta property="og:description" content="Explore algorithm design, data structures, and optimization techniques with practical applications.">
+  <meta property="og:image" content="image-link-here">
+  <meta property="og:url" content="your-website-url-here">
+  <title>Algorithm Design and Analysis</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- FullPage.js Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css">
+
+  <style>
+    /* Base Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* FullPage.js Section Styles */
+    .section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 40px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Title */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #3F4C6B;
+      margin-bottom: 40px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    /* Subtitle */
+    .subtitle {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #607d8b;
+      font-style: italic;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease-out 0.5s forwards;
+    }
+
+    /* Paragraph Styling */
+    p {
+      font-size: 1.3rem;
+      line-height: 2.2;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    /* FadeInUp Animation */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Horizontal Navigation */
+    .horizontal-navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .horizontal-navigation a {
+      font-size: 1.2rem;
+      color: #3F4C6B;
+      text-decoration: none;
+      margin: 0 20px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .horizontal-navigation a:hover {
+      background-color: #3F4C6B;
+      color: #fff;
+    }
+
+    /* Adding space below navigation */
+    #fullpage {
+      margin-top: 70px;
+    }
+
+    /* Background Colors for Sections */
+    #intro {
+      background-color: #1e90ff;
+      color: #fff;
+    }
+
+    #course-about {
+      background-color: #ffcccb;
+    }
+
+    #course-project {
+      background-color: #90ee90;
+    }
+
+    #course-learning {
+      background-color: #ffe4b5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Horizontal Navigation -->
+  <div class="horizontal-navigation">
+    <a href="#intro">Overview</a>
+    <a href="#course-about">Course Details</a>
+    <a href="#course-project">Course Project</a>
+    <a href="#course-learning">Key Insights</a>
+  </div>
+
+  <div id="fullpage">
+    <!-- Section 1: Overview -->
+    <div class="section" id="intro">
+      <div>
+        <h1>Algorithm Design and Analysis</h1>
+        <p class="subtitle">A journey into efficient computational solutions and structural understanding.</p>
+        <p>Welcome to a course where algorithmic concepts come alive. This program dives into core principles and demonstrates their value through relevant examples.</p>
+        <p>From recursion to advanced graph methods, you’ll uncover the secrets behind solving intricate computational problems efficiently.</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Course Details -->
+    <div class="section" id="course-about">
+      <div>
+        <h1 style="font-size: 3rem;">Course Details</h1>
+        <p class="subtitle">Deep dive into algorithmic techniques and their impact on real-world challenges.</p>
+        <p>This course encompasses essential topics like:</p>
+        <ul>
+          <li>Sorting Techniques (MergeSort, HeapSort, and QuickSort)</li>
+          <li>Graph Traversals and Pathfinding (Dijkstra's, BFS, DFS)</li>
+          <li>Advanced Trees (AVL, Red-Black Trees)</li>
+          <li>Problem-Solving with Dynamic Programming</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3: Capstone Project -->
+    <div class="section" id="course-project">
+      <div>
+        <h1 style="font-size: 3rem;"> Project</h1>
+        <p class="subtitle">Practical application of theoretical knowledge to address societal concerns.</p>
+        <p>The project focuses on designing an optimized system for managing water resources in Jaipur. By employing algorithmic techniques, students create a sustainable approach to rainwater harvesting, recycling, and storage.</p>
+        <p><strong>Team Assignments:</strong></p>
+        <ul>
+          <li>Member 1: Efficient resource allocation using dynamic programming</li>
+          <li>Member 2: Rainwater modeling via graph structures</li>
+          <li>Member 3: Storage solutions utilizing greedy techniques</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 4: Key Insights -->
+    <div class="section" id="course-learning">
+      <div>
+        <h1 style="font-size: 2.8rem;">Key Insights</h1>
+        <p class="subtitle">Core takeaways from algorithmic exploration.</p>
+        <p>This course enhances understanding in:</p>
+        <ul>
+          <li>Algorithmic Problem-Solving Techniques (Divide and Conquer, Greedy)</li>
+          <li>Efficiency Analysis (Time-Space Trade-offs)</li>
+          <li>Data Structures and their Applications (Trees, Graphs, Heaps)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FullPage.js Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      scrollBar: true,
+      navigation: true,
+      navigationPosition: 'right',
+      navigationTooltips: ['Overview', 'Details', 'Project', 'Insights'],
+      showActiveTooltip: true,
+    });
+  </script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-  
+
   <!-- FullPage.js Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.css">
 
@@ -43,6 +43,10 @@
       background-color: #4E8098;
     }
 
+    #sdgs {
+      background-color: #508D4D;
+    }
+
     #team-assessment {
       background-color: #2E4A62;
     }
@@ -51,11 +55,12 @@
       background-color: #3A506B;
     }
 
-    /* Horizontal Navigation Styles */
+    /* Horizontal Navigation at Top Center Styles */
     .horizontal-navigation {
       position: fixed;
       top: 20px;
-      left: 20px;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: #f9f9f9;
       padding: 10px 15px;
       border-radius: 8px;
@@ -106,7 +111,7 @@
     .team-box {
       display: inline-block;
       width: 250px;
-      height: 300px;
+      height: 400px;
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 10px;
@@ -132,15 +137,33 @@
     .team-box a:hover {
       text-decoration: underline;
     }
+
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Horizontal Navigation -->
+  <!-- Horizontal Navigation at Top Center -->
   <div class="horizontal-navigation">
     <a href="#intro">Introduction</a>
     <a href="#course-about">About Course</a>
     <a href="#course-project">Course Project</a>
+    <a href="#sdgs">SDG</a>
     <a href="#team-assessment">Team Assessment</a>
     <a href="#course-learning">Learning Reflections</a>
   </div>
@@ -151,64 +174,148 @@
     <div class="section" id="intro">
       <h1>Design and Analysis of Algorithms</h1>
       <p>An advanced course exploring the design and analysis of algorithms, including theoretical and practical concepts.</p>
-      <p>The course dives into algorithmic efficiency and real-world problem-solving methodologies.</p>
+      <p style="font-size: 19px;"">Introduction to Design and Analysis of Algorithms (DAA):
+
+        Algorithms are the cornerstone of computer science and engineering. They are well-defined, step-by-step computational procedures that take some input and produce a desired output. Understanding how algorithms work and how to design efficient algorithms is critical to solving problems effectively in the real world.</p>
+      <div style="text-align:left;">
+        <p style="font-size: 14px;">NAME : MOHAMMED WASEEM R NAIKAR</p>
+        <p style="font-size: 14px;">USN : 01FE24BCS406</p>
+        <p style="font-size: 14px;">FACULTY : ARUNDHATI ARLIMATTI</p>
+      </div>
     </div>
 
     <!-- Section 2: About Course -->
     <div class="section" id="course-about">
       <h1>About Course</h1>
       <p class="subtitle">Deep dive into algorithmic techniques and their impact on real-world challenges.</p>
-        <p>This course encompasses essential topics like:</p>
-        <ul>
-          <li>Sorting Techniques (Bubble, Selection, Insertion, Qiuck, Merge, Heap)</li>
-          <li>Graph Traversals and Pathfinding (BFS, DFS,Dijkstra,BellmonFord etc)</li>
-          <li>Advanced Trees (AVL, Red-Black Trees)</li>
-          <li>String Matching and Dynamic Programming</li>
-        </ul>
+      <p>This course encompasses essential topics like:</p>
+      <ul>
+        <li>Sorting Techniques (Bubble, Selection, Insertion, Quick, Merge, Heap)</li>
+        <li>Graph Traversals and Pathfinding (BFS, DFS, Dijkstra, Bellman-Ford, etc.)</li>
+        <li>Advanced Trees (AVL, Red-Black Trees,Trie)
+        <li>String Matching and Dynamic Programming</li>
+      </ul>
     </div>
 
     <!-- Section 3: Course Project -->
     <div class="section" id="course-project">
       <h1>Course Project</h1>
-      <p>The course project addresses a real-world problem, applying algorithmic methods for efficient solutions.</p>
-      <p>Students are required to showcase their understanding through innovative solutions to real challenges.</p>
+
+      <h2>Problem Statement</h2>
+      <p>Jaipur faces recurring water scarcity issues due to its semi-arid climate. Create a plan focusing on rainwater harvesting, water recycling, and sustainable usage.</p>
+
+      <h2>Jaipur City Design</h2>
       <div style="width:100%; overflow:hidden;">
-      <img src="Jaipur_city_design.jpg" alt="Jaipur City Design" style="width:50%; height:0.3%; display:block; margin:0 auto;">
-     </div>
+        <img src="Jaipur_city_design.jpg" alt="Jaipur City Design" style="width:50%; height:auto; display:block; margin:0 auto;">
+      </div>
+
+      <!-- Business Cases Table -->
+      <h2>Business Cases Identification</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sl. No</th>
+            <th>Business Case</th>
+            <th>Description</th>
+            <th>Owner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Record daily rainfall</td>
+            <td>Recording daily rainfall involves monitoring and storing data for analysis and forecasting.</td>
+            <td>Ummid Salma Mulla</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Check water tank levels</td>
+            <td>Checking water tank levels ensures consistent monitoring to prevent shortages or overflows.</td>
+            <td>Rakshita Gamangatti</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Distribute water to neighborhoods</td>
+            <td>Distributing water to neighborhoods focuses on optimizing flow and meeting demand efficiently.</td>
+            <td>Prathiba Patil</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Identify Areas with High Water Consumption</td>
+            <td>Identify areas with the highest water consumption to prioritize water-saving efforts and ensure equitable distribution of water resources.</td>
+            <td>Md Waseem R Naikar</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Test water quality in local sources</td>
+            <td>Checking water quality ensures consistent monitoring to prevent shortages or overflows.</td>
+            <td>Rakshita Gamangatti & Ummid Salma Mulla</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Plan water supply for crops</td>
+            <td>Planning water supply for crops optimizes irrigation based on crop needs and resource availability.</td>
+            <td>Md Waseem Naikar</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <!-- Section 4: Team Assessment -->
+    <!-- Section 4: SDGs -->
+    <div class="section" id="sdgs">
+      <h1>Sustainable Development Goals (SDGs)</h1>
+      <p>The Sustainable Development Goals (SDGs) are a global call to action to end poverty, protect the planet, and ensure peace and prosperity for all by 2030.</p>
+      <p>Key SDGs related to our project:</p>
+      <ul>
+        <li><strong>Goal 6:</strong> Clean Water and Sanitation - Ensure availability and sustainable management of water and sanitation for all.</li>
+        <li><strong>Goal 11:</strong> Sustainable Cities and Communities - Make cities inclusive, safe, resilient, and sustainable.</li>
+        <li><strong>Goal 13:</strong> Climate Action - Take urgent action to combat climate change and its impacts.</li>
+      </ul>
+      <p>Our efforts in Jaipur aim to address these goals by implementing effective water management systems, promoting sustainability, and ensuring equitable access to resources.</p>
+    </div>
+
+    <!-- Section 5: Team Assessment -->
     <div class="section" id="team-assessment">
-      <h1>Team Assessment</h1>
+      <h1>Team Members</h1>
       <p>The following team members contributed to the project:</p>
       <div class="team-box">
+        <img src="mr waseem.jpg" style="width:50%; height:50%;" alt="Member 1">
         <h3>Member 1</h3>
-        <a href="#member1">View Profile</a>
+        <p>Md Waseem R Naikar</p>
+        <a href="BC.html">View Business Cases</a>
       </div>
+
       <div class="team-box">
+        <img src="Ummeed.jpg" style="width:50%; height:50%;" alt="Member 2">
         <h3>Member 2</h3>
-        <a href="#member2">View Profile</a>
+        <p>Ummeed Salma Mulla</p>
+        <a href="ummeed_bc.html">View Business Cases</a>
       </div>
+
       <div class="team-box">
+        <img src="Pratibha.jpg" style="width:50%; height:50%;" alt="Member 3">
         <h3>Member 3</h3>
-        <a href="#member3">View Profile</a>
+        <p>Pratibha M Patil</p>
+        <a href="pratibha_bc.html">View Business Cases</a>
       </div>
+
       <div class="team-box">
+        <img src="Rakshita.jpg" style="width:50%; height:50%;" alt="Member 3">
         <h3>Member 4</h3>
-        <a href="#member4">View Profile</a>
+        <p>Rakshita Gamangatti</p>
+        <a href="rakshita_bc.html">View Business Case</a>
       </div>
     </div>
 
-    <!-- Section 5: Learning Reflections -->
+    <!-- Section 6: Learning Reflections -->
     <div class="section" id="course-learning">
       <h1>Learning Reflections</h1>
       <p>Reflecting on the core principles of algorithms, including time complexity, recursion, and practical implementations.</p>
       <p>Students gain a comprehensive understanding of both theory and application.</p>
-      <!-- <p class="subtitle">Core takeaways from algorithmic exploration.</p> -->
       <p>This course enhances understanding in:</p>
       <ul>
-        <li>Algorithmic Problem-Solving Techniques (Divide and Conquer, Greedy)</li>
-        <li>Efficiency Analysis (Time-Space Trade-offs)</li>
+        <li>Algorithmic Problem-Solving Techniques (Divide and Conquer, Greedy, Dynamic programming)</li>
+        <li>Efficiency Analysis (Time-Space, Trade-offs)</li>
         <li>Data Structures and their Applications (Trees, Graphs, Heaps)</li>
       </ul>
     </div>
@@ -221,7 +328,7 @@
       scrollBar: true,
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Introduction', 'About Course', 'Course Project', 'Team Assessment', 'Learning Reflections'],
+      navigationTooltips: ['Introduction', 'About Course', 'Course Project', 'SDG', 'Team Assessment', 'Learning Reflections'],
       showActiveTooltip: true,
     });
   </script>
